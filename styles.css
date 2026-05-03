@@ -1162,6 +1162,11 @@ textarea {
 
 @media (max-width: 768px) {
   /* Nav */
+
+  .producto-img-wrap {
+  height: 180px;
+}
+
   .relacionados-grid {
   grid-template-columns: repeat(2, 1fr) !important;
 }
@@ -1269,6 +1274,11 @@ textarea {
 }
 
 @media (max-width: 480px) {
+
+  .producto-img-wrap {
+  height: 160px;
+}
+
   .relacionados-grid {
   grid-template-columns: 1fr !important;
 }
