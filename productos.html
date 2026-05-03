@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Catálogo de productos Vanidoza - cuidado personal para rostro, axilas y pies." />
+  <title>Productos – Vanidoza</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Banner superior -->
+  <div class="banner-top">
+    ✨ Envíos a toda Bolivia &nbsp;|&nbsp; Pago contra entrega en Santa Cruz &nbsp;|&nbsp; Envío gratis en compras mayores a Bs. 150
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="contenedor header-inner">
+      <a href="index.html" class="logo">Vanido<span>za</span></a>
+      <nav id="nav-principal">
+        <ul id="nav-menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html" class="activo">Productos</a></li>
+          <li><a href="producto.html">Detalle</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li>
+            <a href="https://wa.me/59169168226?text=Hola,%20quiero%20hacer%20un%20pedido"
+               class="nav-whatsapp" target="_blank" rel="noopener noreferrer">
+              💬 WhatsApp
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero de página -->
+  <section class="page-hero" aria-label="Catálogo de productos">
+    <div class="contenedor">
+      <span class="etiqueta-seccion">Catálogo completo</span>
+      <h1>Nuestros productos</h1>
+      <p>Todos los productos Vanidoza en un solo lugar. Filtra por categoría y encuentra el que necesitas.</p>
+      <nav class="breadcrumb" aria-label="Ruta de navegación">
+        <a href="index.html">Inicio</a> › Productos
+      </nav>
+    </div>
+  </section>
+
+  <!-- Filtros -->
+  <div class="filtros-bar">
+    <div class="contenedor filtros-inner">
+      <div class="filtros-categorias" role="group" aria-label="Filtrar por categoría">
+        <button class="filtro-btn activo" data-filtro="todos" aria-pressed="true">Todos</button>
+        <button class="filtro-btn" data-filtro="rostro" aria-pressed="false">Rostro</button>
+        <button class="filtro-btn" data-filtro="axilas" aria-pressed="false">Axilas</button>
+        <button class="filtro-btn" data-filtro="pies" aria-pressed="false">Pies</button>
+        <button class="filtro-btn" data-filtro="Kits" aria-pressed="false">Kits</button>
+      </div>
+      <p style="font-size:0.85rem; color:var(--gris-claro);" id="contador-productos">Mostrando 8 productos</p>
+    </div>
+  </div>
+
+  <!-- Grid de productos -->
+  <main class="productos-seccion">
+    <div class="contenedor">
+      <div class="productos-grid" id="productos-grid">
+
+        <!-- Producto 1 -->
+        <article class="producto-card" data-categoria="axilas">
+          <div class="producto-img-wrap">
+            
+            <img src="imagenes/rolon/Rolon.png" alt="Piedra de Alumbre (120gr)">
+            <span class="producto-badge">Nuevo</span>
+          </div>
+          <div class="producto-info">
+            <p class="producto-categoria">Axilas</p>
+            <h2 class="producto-nombre">Piedra de Alumbre (120gr)</h2>
+            <p style="font-size:0.82rem; color:var(--gris-claro); margin-bottom:8px;">
+              Elimina el olor y no tapa los poros.
+            </p>
+            <p class="producto-precio">Bs. 79</p>
+          </div>
+          <div class="producto-footer">
+            <a href="producto.html" class="btn-carrito">Ver detalle</a>
+          </div>
+        </article>
+
+        <!-- Producto 2 -->
+        <article class="producto-card" data-categoria="axilas">
+          <div class="producto-img-wrap">
+            <!-- <img src="img/serum-vitamina-c.jpg" alt="Sérum Vitamina C Vanidoza"> -->
+            <img src="imagenes/spray/spray.png" alt="Spray de Alumbre">
+            <span class="producto-badge" style="background:#f4b942; color:#2D2D2D;">Popular</span>
+          </div>
+          <div class="producto-info">
+            <p class="producto-categoria">Axilas</p>
+            <h2 class="producto-nombre">Spray de Alumbre</h2>
+            <p style="font-size:0.82rem; color:var(--gris-claro); margin-bottom:8px;">
+              Frescura y protección en formato spray para una aplicación rápida.
+            </p>
+            <p class="producto-precio"><span class="precio-antes">Bs. 89</span>Bs. 79</p>
+          </div>
+          <div class="producto-footer">
+            <a href="spray.html" class="btn-carrito">Ver detalle</a>
+          </div>
+        </article>
+
+        <!-- Producto 3 -->
+        <article class="producto-card" data-categoria="pies">
+          <div class="producto-img-wrap">
+            
+            <img src="imagenes/talco/talco.png" alt="Talco de Alumbre">
+            <span class="producto-badge">Nuevo</span>
+          </div>
+          <div class="producto-info">
+            <p class="producto-categoria">Pies</p>
+            <h2 class="producto-nombre">Talco de Alumbre</h2>
+            <p style="font-size:0.82rem; color:var(--gris-claro); margin-bottom:8px;">
+              Controla el sudor y el mal olor en los pies de forma natural.
+            </p>
+            <p class="producto-precio">Bs. 65</p>
+          </div>
+          <div class="producto-footer">
+            <a href="talco.html" class="btn-carrito">Ver detalle</a>
+          </div>
+        </article>
+
+        <!-- Producto 4 -->
+        <article class="producto-card" data-categoria="rostro">
+          <div class="producto-img-wrap">
+            
+            <img src="imagenes/piedra/piedrita.png" alt="Piedra Facial de Alumbre">
+          </div>
+          <div class="producto-info">
+            <p class="producto-categoria">Rostro</p>
+            <h2 class="producto-nombre">Piedra Facial de Alumbre</h2>
+            <p style="font-size:0.82rem; color:var(--gris-claro); margin-bottom:8px;">
+              Tonifica la piel del rostro y ayuda a cerrar los poros después de la limpieza.
+            </p>
+            <p class="producto-precio">Bs. 60</p>
+          </div>
+          <div class="producto-footer">
+            <a href="facial.html" class="btn-carrito">Ver detalle</a>
+          </div>
+        </article>
+
+        <!-- Producto 5 -->
+        <article class="producto-card" data-categoria="rostro">
+          <div class="producto-img-wrap">
+            
+            <img src="imagenes/jabon/alumbre.png" alt="Jabón de Alumbre">
+            <span class="producto-badge">Oferta</span>
+          </div>
+          <div class="producto-info">
+            <p class="producto-categoria">Rostro</p>
+            <h2 class="producto-nombre">Jabón de Alumbre</h2>
+            <p style="font-size:0.82rem; color:var(--gris-claro); margin-bottom:8px;">
+              Limpieza profunda y efecto aclarante para el rostro.
+            </p>
+            <p class="producto-precio"><span class="precio-antes">Bs. 45</span>Bs. 35</p>
+          </div>
+          <div class="producto-footer">
+            <a href="alumbre.html" class="btn-carrito">Ver detalle</a>
+          </div>
+        </article>
+
+        <!-- Producto 6 -->
+        <article class="producto-card" data-categoria="rostro">
+          <div class="producto-img-wrap">
+            
+            <img src="imagenes/carbon/carbon.png" alt="Jabón de Carbón Activado">
+          </div>
+          <div class="producto-info">
+            <p class="producto-categoria">Rostro</p>
+            <h2 class="producto-nombre">Jabón de Carbón Activado</h2>
+            <p style="font-size:0.82rem; color:var(--gris-claro); margin-bottom:8px;">
+              Limpia profundamente los poros y elimina el exceso de sebo.
+            </p>
+            <p class="producto-precio">Bs. 75</p>
+          </div>
+          <div class="producto-footer">
+            <a href="carbon.html" class="btn-carrito">Ver detalle</a>
+          </div>
+        </article>
+
+        <!-- Producto 7 -->
+        <article class="producto-card" data-categoria="rostro">
+          <div class="producto-img-wrap">
+            
+            <img src="imagenes/arroz/arroz.png" alt="Jabón de Arroz">
+          </div>
+          <div class="producto-info">
+            <p class="producto-categoria">rostro</p>
+            <h2 class="producto-nombre">Jabón de Arroz</h2>
+            <p style="font-size:0.82rem; color:var(--gris-claro); margin-bottom:8px;">
+              Suaviza la piel y ayuda a reducir manchas e imperfecciones.
+            </p>
+            <p class="producto-precio">Bs. 35</p>
+          </div>
+          <div class="producto-footer">
+            <a href="arroz.html" class="btn-carrito">Ver detalle</a>
+          </div>
+        </article>
+
+        <!-- Producto 8 -->
+        <article class="producto-card" data-categoria="Kits">
+          <div class="producto-img-wrap">
+            
+            <img src="imagenes/kit/4. Kit Limpieza total/1.png" alt="Kit Limpieza Total">
+            <span class="producto-badge" style="background:#f4b942; color:#2D2D2D;">Kit</span>
+          </div>
+          <div class="producto-info">
+            <p class="producto-categoria">Kit</p>
+            <h2 class="producto-nombre">Kit Limpieza Total</h2>
+            <p style="font-size:0.82rem; color:var(--gris-claro); margin-bottom:8px;">
+              Combina nuestros productos más vendidos para una rutina completa de cuidado personal.
+            </p>
+            <p class="producto-precio"><span class="precio-antes">Bs. 399</span>Bs. 340</p>
+          </div>
+          <div class="producto-footer">
+            <a href="kit.html" class="btn-carrito">Ver detalle</a>
+          </div>
+        </article>
+
+      </div><!-- fin productos-grid -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="contenedor">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Vanido<span>za</span></a>
+          <p>Productos de cuidado personal formulados para que te sientas increíble cada día.</p>
+          <div class="footer-redes">
+            <a href="https://instagram.com" class="red-social" target="_blank" rel="noopener noreferrer" aria-label="Instagram">📷</a>
+            <a href="https://facebook.com" class="red-social" target="_blank" rel="noopener noreferrer" aria-label="Facebook">👍</a>
+            <a href="https://wa.me/59169168226" class="red-social" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">💬</a>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="Categorías">
+          <h4>Productos</h4>
+          <ul>
+            <li><a href="productos.html?categoria=rostro">Rostro</a></li>
+            <li><a href="productos.html?categoria=axilas">Axilas</a></li>
+            <li><a href="productos.html?categoria=pies">Pies</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Información">
+          <h4>Información</h4>
+          <ul>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="contacto.html#envios">Envíos</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="https://wa.me/59169168226" target="_blank" rel="noopener noreferrer">📱 +591 6916 8226</a></li>
+            <li><a href="contacto.html">📍 Santa Cruz, Bolivia</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Vanidoza. Todos los derechos reservados.</p>
+        <p>Hecho con 💖 en Bolivia</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* Menú hamburguesa */
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      const menu = document.getElementById('nav-menu');
+      const abierto = menu.classList.toggle('abierto');
+      this.setAttribute('aria-expanded', abierto);
+    });
+
+    /* Filtros de categoría */
+    const filtros = document.querySelectorAll('.filtro-btn');
+    const productos = document.querySelectorAll('#productos-grid .producto-card');
+    const contador = document.getElementById('contador-productos');
+
+    filtros.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Actualizar botón activo
+        filtros.forEach(b => { b.classList.remove('activo'); b.setAttribute('aria-pressed', 'false'); });
+        btn.classList.add('activo');
+        btn.setAttribute('aria-pressed', 'true');
+
+        const filtro = btn.dataset.filtro;
+        let visibles = 0;
+
+        productos.forEach(p => {
+          if (filtro === 'todos' || p.dataset.categoria === filtro) {
+            p.style.display = '';
+            visibles++;
+          } else {
+            p.style.display = 'none';
+          }
+        });
+
+        contador.textContent = `Mostrando ${visibles} producto${visibles !== 1 ? 's' : ''}`;
+      });
+    });
+  </script>
+
+</body>
+</html>

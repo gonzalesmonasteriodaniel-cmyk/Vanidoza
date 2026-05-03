@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vanidoza - Productos de cuidado personal y belleza. Envíos a toda Bolivia." />
+  <title>Vanidoza – Belleza & Cuidado Personal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== BANNER SUPERIOR ===================== -->
+  <div class="banner-top">
+    ✨ Envíos a toda Bolivia &nbsp;|&nbsp; Pago contra entrega en Santa Cruz &nbsp;|&nbsp; Envío gratis en compras mayores a Bs. 150
+  </div>
+
+  <!-- ===================== HEADER ===================== -->
+  <header>
+    <div class="contenedor header-inner">
+      <!-- Logo -->
+      <a href="index.html" class="logo">Vanido<span>za</span></a>
+
+      <!-- Navegación principal -->
+      <nav id="nav-principal">
+        <ul id="nav-menu">
+          <li><a href="index.html" class="activo">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="producto.html">Detalle</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <!-- Enlace externo: WhatsApp -->
+          <li>
+            <a href="https://wa.me/59169168226?text=Hola,%20quiero%20hacer%20un%20pedido" 
+               class="nav-whatsapp" 
+               target="_blank" 
+               rel="noopener noreferrer">
+              💬 WhatsApp
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Botón hamburguesa (móvil) -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" aria-label="Presentación principal">
+    <div class="contenedor hero-inner">
+      <!-- Texto -->
+      <div class="hero-texto">
+        <span class="etiqueta-seccion">✨ Nueva colección</span>
+        <h1>Tu rutina de belleza, <em>sin complicaciones</em></h1>
+        <p>Productos de cuidado personal formulados para que te sientas increíble cada día. Naturales, efectivos y accesibles.</p>
+        <div class="hero-botones">
+          <a href="productos.html" class="btn btn-principal">Ver productos</a>
+          <a href="contacto.html" class="btn btn-secundario">Contáctanos</a>
+        </div>
+      </div>
+
+      <!-- Imagen hero -->
+      <div class="hero-imagen">
+        <!-- Reemplaza el div por una etiqueta img cuando tengas tu foto -->
+        <img src="imagenes/kit/4. Kit Limpieza total/1.png" alt="Kit completo de cuidado personal Vanidoza">
+
+        <!-- Badge flotante -->
+        <div class="hero-badge" aria-label="Clientes satisfechos">
+          <div class="hero-badge-icono">💖</div>
+          <div class="hero-badge-texto">
+            <strong>+500</strong>
+            <span>Clientes felices</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BENEFICIOS ===================== -->
+  <section class="beneficios" aria-label="Beneficios de comprar en Vanidoza">
+    <div class="contenedor">
+      <div class="beneficios-grid">
+        <div class="beneficio-item">
+          <div class="beneficio-icono">🚚</div>
+          <h4>Envíos a toda Bolivia</h4>
+          <p>Recibe tu pedido donde estés</p>
+        </div>
+        <div class="beneficio-item">
+          <div class="beneficio-icono">💳</div>
+          <h4>Pago contra entrega</h4>
+          <p>En Santa Cruz de la Sierra</p>
+        </div>
+        <div class="beneficio-item">
+          <div class="beneficio-icono">🌿</div>
+          <h4>Ingredientes naturales</h4>
+          <p>Fórmulas suaves y efectivas</p>
+        </div>
+        <div class="beneficio-item">
+          <div class="beneficio-icono">💬</div>
+          <h4>Atención personalizada</h4>
+          <p>Te asesoramos por WhatsApp</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CATEGORÍAS ===================== -->
+  <section class="categorias" aria-labelledby="titulo-categorias">
+    <div class="contenedor">
+      <div class="seccion-titulo">
+        <span class="etiqueta-seccion">Explora</span>
+        <h2 id="titulo-categorias">Nuestras categorías</h2>
+        <p>Encuentra el producto ideal para cada parte de tu rutina de cuidado personal</p>
+      </div>
+
+      <div class="categorias-grid">
+        <!-- Categoría 1: Rostro -->
+        <article class="categoria-card">
+          
+          <img src="imagenes/categorias/cara.avif" alt="Productos para el rostro" class="categoria-img">
+          <div class="categoria-overlay">
+            <h3>Rostro</h3>
+            <span>Cremas, serums y más</span><br>
+            <a href="productos.html?categoria=rostro" class="categoria-ver">Ver productos →</a>
+          </div>
+        </article>
+
+        <!-- Categoría 2: Axilas -->
+        <article class="categoria-card">
+          
+          <img src="imagenes/categorias/1.avif" alt="Productos para axilas" class="categoria-img">
+          <div class="categoria-overlay">
+            <h3>Axilas</h3>
+            <span>Aclarantes y desodorantes</span><br>
+            <a href="productos.html?categoria=axilas" class="categoria-ver">Ver productos →</a>
+          </div>
+        </article>
+
+        <!-- Categoría 3: Pies -->
+        <article class="categoria-card">
+        
+          <img src="imagenes/categorias/piees.avif" alt="Productos para pies" class="categoria-img">
+          <div class="categoria-overlay">
+            <h3>Pies</h3>
+            <span>Cremas hidratantes y más</span><br>
+            <a href="productos.html?categoria=pies" class="categoria-ver">Ver productos →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CARRUSEL DE PRODUCTOS ===================== -->
+  <section class="carrusel-seccion" aria-labelledby="titulo-carrusel">
+    <div class="contenedor">
+      <div class="seccion-titulo">
+        <span class="etiqueta-seccion">Catálogo</span>
+        <h2 id="titulo-carrusel">Todos nuestros productos</h2>
+        <p>Desliza para descubrir toda la colección Vanidoza</p>
+      </div>
+
+      <div class="carrusel-wrapper">
+        <div class="carrusel-track-container" aria-label="Carrusel de productos">
+          <div class="carrusel-track" id="carrusel-track" role="list">
+
+            <!-- Producto 1 -->
+            <div class="carrusel-item" role="listitem">
+              <article class="producto-card">
+                <div class="producto-img-wrap">
+                  
+                  <img src="imagenes/rolon/Rolon.png" alt="Des Piedra de Alumbre">
+                  <span class="producto-badge">Nuevo</span>
+                </div>
+                <div class="producto-info">
+                  <p class="producto-categoria">Axilas</p>
+                  <h3 class="producto-nombre">Piedra de Alumbre (120gr)</h3>
+                  <p class="producto-precio">Bs. 79</p>
+                </div>
+                <div class="producto-footer">
+                  <a href="producto.html" class="btn-carrito">Ver detalle</a>
+                </div>
+              </article>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="carrusel-item" role="listitem">
+              <article class="producto-card">
+                <div class="producto-img-wrap">
+                  <img src="imagenes/spray/spray.png" alt="Spray de Alumbre">
+                  <span class="producto-badge" style="background:#f4b942; color:#2D2D2D;">Popular</span>
+                </div>
+                <div class="producto-info">
+                  <p class="producto-categoria">Axilas</p>
+                  <h3 class="producto-nombre">Spray de Alumbre</h3>
+                  <p class="producto-precio">
+                    <span class="precio-antes">Bs. 89</span>Bs. 79
+                  </p>
+                </div>
+                <div class="producto-footer">
+                  <a href="spray.html" class="btn-carrito">Ver detalle</a>
+                </div>
+              </article>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="carrusel-item" role="listitem">
+              <article class="producto-card">
+                <div class="producto-img-wrap">
+                  <img src="imagenes/jabon/alumbre.png" alt="Jabón de Alumbre">
+                </div>
+                <div class="producto-info">
+                  <p class="producto-categoria">Rostro</p>
+                  <h3 class="producto-nombre">Jabón de Alumbre</h3>
+                  <p class="producto-precio">Bs. 35</p>
+                </div>
+                <div class="producto-footer">
+                  <a href="alumbre.html" class="btn-carrito">Ver detalle</a>
+                </div>
+              </article>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="carrusel-item" role="listitem">
+              <article class="producto-card">
+                <div class="producto-img-wrap">
+                  <img src="imagenes/arroz/arroz.png" alt="Jabón de Arroz">
+                  <span class="producto-badge">Oferta</span>
+                </div>
+                <div class="producto-info">
+                  <p class="producto-categoria">Rostro</p>
+                  <h3 class="producto-nombre">Jabón de Arroz</h3>
+                  <p class="producto-precio">
+                    <span class="precio-antes">Bs. 45</span>Bs. 35
+                  </p>
+                </div>
+                <div class="producto-footer">
+                  <a href="arroz.html" class="btn-carrito">Ver detalle</a>
+                </div>
+              </article>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="carrusel-item" role="listitem">
+              <article class="producto-card">
+                <div class="producto-img-wrap">
+                  <img src="imagenes/carbon/carbon.png" alt="jabón de carbón activado">
+                </div>
+                <div class="producto-info">
+                  <p class="producto-categoria">Rostro</p>
+                  <h3 class="producto-nombre">Jabón de Carbón Activado</h3>
+                  <p class="producto-precio">Bs. 35</p>
+                </div>
+                <div class="producto-footer">
+                  <a href="carbon.html" class="btn-carrito">Ver detalle</a>
+                </div>
+              </article>
+            </div>
+
+            <!-- Producto 6 -->
+            <div class="carrusel-item" role="listitem">
+              <article class="producto-card">
+                <div class="producto-img-wrap">
+                  <img src="imagenes/piedra/piedrita.png" alt="Piedra Facial de Alumbre">
+                </div>
+                <div class="producto-info">
+                  <p class="producto-categoria">Rostro</p>
+                  <h3 class="producto-nombre">Piedra Facial de Alumbre</h3>
+                  <p class="producto-precio">Bs. 60</p>
+                </div>
+                <div class="producto-footer">
+                  <a href="facial.html" class="btn-carrito">Ver detalle</a>
+                </div>
+              </article>
+            </div>
+
+            <!-- Producto 7 -->
+            <div class="carrusel-item" role="listitem">
+              <article class="producto-card">
+                <div class="producto-img-wrap">
+                  <img src="imagenes/talco/1.png" alt="Talco de Alumbre">
+                  <span class="producto-badge">Nuevo</span>
+                </div>
+                <div class="producto-info">
+                  <p class="producto-categoria">Pies</p>
+                  <h3 class="producto-nombre">Talco de Alumbre</h3>
+                  <p class="producto-precio">Bs. 65</p>
+                </div>
+                <div class="producto-footer">
+                  <a href="talco.html" class="btn-carrito">Ver detalle</a>
+                </div>
+              </article>
+            </div>
+
+            <!-- Producto 8 -->
+            <div class="carrusel-item" role="listitem">
+              <article class="producto-card">
+                <div class="producto-img-wrap">
+                  <img src="imagenes/kit/4. Kit Limpieza total/1.png" alt="Kit Vanidoza Completo">
+                  <span class="producto-badge" style="background:#f4b942; color:#2D2D2D;">Kit</span>
+                </div>
+                <div class="producto-info">
+                  <p class="producto-categoria">Kit</p>
+                  <h3 class="producto-nombre">Kit Limpieza Total</h3>
+                  <p class="producto-precio">
+                    <span class="precio-antes">Bs. 399</span>Bs. 340
+                  </p>
+                </div>
+                <div class="producto-footer">
+                  <a href="kit.html" class="btn-carrito">Ver detalle</a>
+                </div>
+              </article>
+            </div>
+
+          </div><!-- fin carrusel-track -->
+        </div><!-- fin carrusel-track-container -->
+
+        <!-- Controles -->
+        <div class="carrusel-controles">
+          <button class="carrusel-btn" id="btn-anterior" aria-label="Producto anterior">&#8592;</button>
+          <div class="carrusel-dots" id="carrusel-dots" role="tablist" aria-label="Posición del carrusel">
+            <button class="dot activo" role="tab" aria-selected="true" aria-label="Posición 1"></button>
+            <button class="dot" role="tab" aria-selected="false" aria-label="Posición 2"></button>
+            <button class="dot" role="tab" aria-selected="false" aria-label="Posición 3"></button>
+            <button class="dot" role="tab" aria-selected="false" aria-label="Posición 4"></button>
+            <button class="dot" role="tab" aria-selected="false" aria-label="Posición 5"></button>
+          </div>
+          <button class="carrusel-btn" id="btn-siguiente" aria-label="Siguiente producto">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MÁS COMPRADOS ===================== -->
+  <section class="mas-comprados" aria-labelledby="titulo-mas-comprados">
+    <div class="contenedor">
+      <div class="seccion-titulo">
+        <span class="etiqueta-seccion">🏆 Los favoritos</span>
+        <h2 id="titulo-mas-comprados">Más comprados</h2>
+        <p>Los productos que nuestras clientas no pueden dejar de pedir</p>
+      </div>
+
+      <div class="mas-comprados-grid">
+
+        <!-- Top 1 -->
+        <article class="producto-card" style="position:relative;">
+          <div class="ranking-badge" aria-label="Número 1 más vendido">#1</div>
+          <div class="producto-img-wrap">
+            <img src="imagenes/spray/spray.png" alt="Spray de Alumbre">
+          </div>
+          <div class="producto-info">
+            <div class="estrellas" aria-label="5 estrellas">★★★★★</div>
+            <p class="producto-categoria">Axilas</p>
+            <h3 class="producto-nombre">Spray de Alumbre</h3>
+            <p class="producto-precio">Bs. 79</p>
+          </div>
+          <div class="producto-footer">
+            <a href="spray.html" class="btn-carrito">Ver detalle</a>
+          </div>
+        </article>
+
+        <!-- Top 2 -->
+        <article class="producto-card" style="position:relative;">
+          <div class="ranking-badge" aria-label="Número 2 más vendido">#2</div>
+          <div class="producto-img-wrap">
+            <img src="imagenes/talco/talco.png" alt="Talco de Alumbre">
+          </div>
+          <div class="producto-info">
+            <div class="estrellas" aria-label="5 estrellas">★★★★★</div>
+            <p class="producto-categoria">Pies</p>
+            <h3 class="producto-nombre">Talco de Alumbre</h3>
+            <p class="producto-precio">Bs. 65</p>
+          </div>
+          <div class="producto-footer">
+            <a href="talco.html" class="btn-carrito">Ver detalle</a>
+          </div>
+        </article>
+
+        <!-- Top 3 -->
+        <article class="producto-card" style="position:relative;">
+          <div class="ranking-badge" aria-label="Número 3 más vendido">#3</div>
+          <div class="producto-img-wrap">
+            <img src="imagenes/rolon/Rolon.png" alt="Piedra de Alumbre (120gr)">
+          </div>
+          <div class="producto-info">
+            <div class="estrellas" aria-label="4 estrellas y media">★★★★☆</div>
+            <p class="producto-categoria">Pies</p>
+            <h3 class="producto-nombre">Piedra de Alumbre (120gr)</h3>
+            <p class="producto-precio">Bs. 79</p>
+          </div>
+          <div class="producto-footer">
+            <a href="producto.html" class="btn-carrito">Ver detalle</a>
+          </div>
+        </article>
+
+        <!-- Top 4 -->
+        <article class="producto-card" style="position:relative;">
+          <div class="ranking-badge" aria-label="Número 4 más vendido">#4</div>
+          <div class="producto-img-wrap">
+            <img src="imagenes/kit/4. Kit Limpieza total/1.png" alt="Kit Vanidoza Completo">
+          </div>
+          <div class="producto-info">
+            <div class="estrellas" aria-label="5 estrellas">★★★★★</div>
+            <p class="producto-categoria">Kit</p>
+            <h3 class="producto-nombre">Kit Limpieza Total</h3>
+            <p class="producto-precio">Bs. 340</p>
+          </div>
+          <div class="producto-footer">
+            <a href="kit.html" class="btn-carrito">Ver detalle</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- CTA -->
+      <div style="text-align:center; margin-top: 48px;">
+        <a href="productos.html" class="btn btn-principal">Ver todos los productos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="contenedor">
+      <div class="footer-grid">
+        <!-- Marca -->
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Vanido<span>za</span></a>
+          <p>Productos de cuidado personal formulados para que te sientas increíble cada día. Naturales, efectivos y hechos con amor.</p>
+          <div class="footer-redes">
+            <a href="https://instagram.com" class="red-social" target="_blank" rel="noopener noreferrer" aria-label="Instagram Vanidoza">📷</a>
+            <a href="https://facebook.com" class="red-social" target="_blank" rel="noopener noreferrer" aria-label="Facebook Vanidoza">👍</a>
+            <a href="https://wa.me/59169168226" class="red-social" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Vanidoza">💬</a>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <nav class="footer-col" aria-label="Navegación de productos">
+          <h4>Productos</h4>
+          <ul>
+            <li><a href="productos.html?categoria=rostro">Rostro</a></li>
+            <li><a href="productos.html?categoria=axilas">Axilas</a></li>
+            <li><a href="productos.html?categoria=pies">Pies</a></li>
+            <li><a href="productos.html">Ver todos</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col" aria-label="Información de la empresa">
+          <h4>Información</h4>
+          <ul>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="contacto.html#envios">Envíos</a></li>
+            <li><a href="contacto.html#preguntas">Preguntas frecuentes</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="https://wa.me/59169168226" target="_blank" rel="noopener noreferrer">📱 +591 6916 8226</a></li>
+            <li><a href="contacto.html">📍 Santa Cruz, Bolivia</a></li>
+            <li><a href="mailto:info@vanidoza.com">✉️ info@vanidoza.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 Vanidoza. Todos los derechos reservados.</p>
+        <p>Hecho con 💖 en Bolivia</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== JAVASCRIPT ===================== -->
+  <script>
+    /* --- Menú hamburguesa --- */
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    menuToggle.addEventListener('click', () => {
+      const abierto = navMenu.classList.toggle('abierto');
+      menuToggle.setAttribute('aria-expanded', abierto);
+    });
+
+    /* --- Carrusel --- */
+    const track = document.getElementById('carrusel-track');
+    const dots = document.querySelectorAll('.dot');
+    const btnAnterior = document.getElementById('btn-anterior');
+    const btnSiguiente = document.getElementById('btn-siguiente');
+
+    let posicionActual = 0;
+
+    // Calcula cuántos items se ven a la vez
+    function itemsVisibles() {
+      const ancho = window.innerWidth;
+      if (ancho <= 480) return 1;
+      if (ancho <= 768) return 2;
+      if (ancho <= 1024) return 3;
+      return 4;
+    }
+
+    const totalItems = track.children.length;
+
+    function actualizarCarrusel() {
+      const items = track.querySelectorAll('.carrusel-item');
+      const anchoItem = items[0].offsetWidth + 24; // +gap
+      track.style.transform = `translateX(-${posicionActual * anchoItem}px)`;
+
+      // Actualizar dots
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('activo', i === posicionActual);
+        dot.setAttribute('aria-selected', i === posicionActual);
+      });
+    }
+
+    btnSiguiente.addEventListener('click', () => {
+      const maxPos = totalItems - itemsVisibles();
+      posicionActual = posicionActual < maxPos ? posicionActual + 1 : 0;
+      actualizarCarrusel();
+    });
+
+    btnAnterior.addEventListener('click', () => {
+      const maxPos = totalItems - itemsVisibles();
+      posicionActual = posicionActual > 0 ? posicionActual - 1 : maxPos;
+      actualizarCarrusel();
+    });
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        posicionActual = i;
+        actualizarCarrusel();
+      });
+    });
+
+    // Auto-play cada 4 segundos
+    let autoplay = setInterval(() => {
+      const maxPos = totalItems - itemsVisibles();
+      posicionActual = posicionActual < maxPos ? posicionActual + 1 : 0;
+      actualizarCarrusel();
+    }, 4000);
+
+    // Pausar autoplay al interactuar
+    [btnAnterior, btnSiguiente, ...dots].forEach(el => {
+      el.addEventListener('click', () => {
+        clearInterval(autoplay);
+      });
+    });
+
+    window.addEventListener('resize', actualizarCarrusel);
+  </script>
+
+</body>
+</html>
