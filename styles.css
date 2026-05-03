@@ -1276,12 +1276,12 @@ textarea {
 @media (max-width: 480px) {
 
   .producto-img-wrap {
-  height: 200px;
+  height: 240px;
   -webkit-transform: translateZ(0);
 }
 
-.producto-img-wrap {
-  height: 240px;
+.producto-img-wrap img {
+  -webkit-transform: translateZ(0);
 }
 
   .relacionados-grid {
