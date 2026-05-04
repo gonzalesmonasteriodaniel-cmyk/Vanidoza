@@ -1276,26 +1276,38 @@ textarea {
 @media (max-width: 480px) {
 
   .producto-img-wrap {
-  height: 240px;
-  -webkit-transform: translateZ(0);
-}
+    height: 240px;
+    -webkit-transform: translateZ(0);
+  }
 
-.producto-img-wrap img {
-  object-fit: contain;
-  -webkit-transform: translateZ(0);
+  .producto-img-wrap img {
+    object-fit: contain;
+    -webkit-transform: translateZ(0);
+  }
 
-}
+  .carrusel-track-container {
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
 
-  .relacionados-grid {
-  grid-template-columns: 1fr !important;
-}
-  .mas-comprados-grid,
-  .productos-grid {
-    grid-template-columns: 1fr;
+  .carrusel-track {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
   }
 
   .carrusel-item {
     min-width: calc(100% - 0px);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+
+  .relacionados-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .mas-comprados-grid,
+  .productos-grid {
+    grid-template-columns: 1fr;
   }
 
   .form-fila {
