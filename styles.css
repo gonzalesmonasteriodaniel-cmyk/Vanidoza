@@ -1281,7 +1281,7 @@ textarea {
 }
 
 .producto-img-wrap img {
-   object-fit: contain;
+  object-fit: contain;
   -webkit-transform: translateZ(0);
 
 }
