@@ -1281,7 +1281,9 @@ textarea {
 }
 
 .producto-img-wrap img {
+   object-fit: contain;
   -webkit-transform: translateZ(0);
+
 }
 
   .relacionados-grid {
